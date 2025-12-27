@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light nav">
+    <img class="nav-image" src="logo.png" width="100" height="100" alt="">
+    <a class="navbar-brand" href="#">
+        <img class="nav-image2" src="FYP (1).png" width="170" height="90" alt="">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item active nav-home">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <li class="nav-item active nav-home">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-cogs"></i> Customization
+                </a>
+            </li>
+            <li class="nav-item active nav-home">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-feather-alt"></i> Poet
+                </a>
+            </li>
+            <li class="nav-item dropdown nav-home">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-language"></i> Language
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-globe"></i> English
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-globe"></i> Urdu
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <form class="d-flex ms-auto">
+            <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+        </form>
+    </div>
+</nav>
+
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 carousel-img" src="carousel2.png" height="720px" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carousel-title">Create Beutiful Poetry with Ease</h5>
+                    <p class="carousel-caption-text">Discover amazing features and explore customization options.</p>
+                    <button class="button btn btn-maroon">Customize Frames Now!</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <section class="wrapper">
+        <div class="container-fostrap">
+            <div>
+                <h1 class="heading">
+                    Customize Your Templates Now!
+                </h1>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="">
+                                <img src="carousel1.png" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="">Ghalib Poetry
+                                      </a>
+                                    </h4>
+                                    <p class="">
+                                        Explore the rich heritage of Urdu Poetry
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="" class="btn btn-link btn-block" style="color: #800000; font-weight: bold;">
+                                        Customize Now!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="">
+                                <img src="iqbal.png" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="">Iqbal Shayari
+                                      </a>
+                                    </h4>
+                                    <p class="">
+                                       Delve into the beauty of Urdu Shayari
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="" class="btn btn-link btn-block"  style="color: #800000; font-weight: bold;">
+                                        Customize Now!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="">
+                                <img src="ghazal.png" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="">Urdu Ghazal
+                                      </a>
+                                    </h4>
+                                    <p class="">
+                                       Experience the elegance of Urdu Ghazal
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="" class="btn btn-link btn-block" style="color: #800000; font-weight: bold;">
+                                        Customize Now!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Cube Section -->
+     <h1 class="heading">5 top Poetry of the Day</h1>
+  <section class="cube-container">
+    <div class="cube">
+      <div class="face front">
+        <div class="content">
+          <h2 class="poem-title">Poem 1: Ghalib's Verses</h2>
+          <p class="poem-snippet">Explore the deep emotions expressed in Ghalib's poetry...</p>
+          <a href="#" class="btn-read">Read More</a>
+        </div>
+      </div>
+      <div class="face back">
+        <div class="content">
+          <h2 class="poem-title">Poem 2: Iqbal's Vision</h2>
+          <p class="poem-snippet">A glimpse into the revolutionary thoughts of Allama Iqbal...</p>
+          <a href="#" class="btn-read">Read More</a>
+        </div>
+      </div>
+      <div class="face left">
+        <div class="content">
+          <h2 class="poem-title">Poem 3: Rumi's Wisdom</h2>
+          <p class="poem-snippet">A dive into the mystical thoughts of Rumi...</p>
+          <a href="#" class="btn-read">Read More</a>
+        </div>
+      </div>
+      <div class="face right">
+        <div class="content">
+          <h2 class="poem-title">Poem 4: Faiz's Passion</h2>
+          <p class="poem-snippet">Feel the intensity and depth of Faiz Ahmed Faiz's verses...</p>
+          <a href="#" class="btn-read">Read More</a>
+        </div>
+      </div>
+      <div class="face top">
+        <div class="content">
+          <h2 class="poem-title">Poem 5: Nazrul's Struggles</h2>
+          <p class="poem-snippet">Experience the rebellious spirit in Nazrul's poetry...</p>
+          <a href="#" class="btn-read">Read More</a>
+        </div>
+      </div>
+      <div class="face bottom">
+        <div class="content">
+          <h2 class="poem-title">Poem 6: Gitanjali</h2>
+          <p class="poem-snippet">Rabindranath Tagore’s Gitanjali celebrates life and nature...</p>
+          <a href="#" class="btn-read">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <img src="FYP.png" width="200px" height="80px" alt="">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div class="icon">
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+  
+    <!-- Section: Links -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <!-- Company Info -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company Name
+            </h6>
+            <p>
+                <img src="logo.png" width="80px" height="80px" alt="">
+                اندازِ بیاں اور
+            </p>
+          </div>
+          <!-- Company Info -->
+  
+          <!-- Products -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+            <p><a href="#!" class="text-reset">Angular</a></p>
+            <p><a href="#!" class="text-reset">React</a></p>
+            <p><a href="#!" class="text-reset">Vue</a></p>
+            <p><a href="#!" class="text-reset">Laravel</a></p>
+          </div>
+          <!-- Products -->
+  
+          <!-- Useful Links -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+            <p><a href="#!" class="text-reset">Pricing</a></p>
+            <p><a href="#!" class="text-reset">Settings</a></p>
+            <p><a href="#!" class="text-reset">Orders</a></p>
+            <p><a href="#!" class="text-reset">Help</a></p>
+          </div>
+          <!-- Useful Links -->
+  
+          <!-- Contact Info -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Pakistan, Gulshan Terrace, Gulshan-e-Iqbal</p>
+            <p><i class="fas fa-envelope me-3"></i> andazor@andaz.au.pk </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.1);">
+      © 2025 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Andaz-e-Bayan.com</a>
+    </div>
+  </footer>
+  
+</body>
+</html>

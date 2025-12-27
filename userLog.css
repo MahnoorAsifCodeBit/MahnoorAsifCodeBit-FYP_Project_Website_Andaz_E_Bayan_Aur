@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('login.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/* Transparent overlay over background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: rgba(255, 237, 237, 0.75);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+.login-box {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h2 {
+    color: #8B0000;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.login-box p.instruction-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 80%;
+    margin: 10px 0;
+    height: 20px;
+}
+
+.password-container{
+    width: 78%;
+    margin: 10px auto;
+}
+
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="tel"] {
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+.login-box input:focus {
+    border-color: #8B0000;
+    outline: none;
+}
+
+/* Password container for toggle eye button */
+.password-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background-color: white;
+    padding-right: 10px;
+}
+
+.password-container input {
+    border: none;
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+}
+
+.password-container input:focus {
+    outline: none;
+}
+
+.toggle-password {
+    cursor: pointer;
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 14px;
+    user-select: none;
+    padding-left: 5px;
+}
+
+.login-box button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #8B0000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 40%;
+}
+.login-box button:hover {
+    background: #b30000;
+}
+
+.login-box p.error-box {
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid #ff4d4d;
+    color: #a30000;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.success {
+    background-color: rgba(0, 128, 0, 0.1);
+    border: 1px solid #28a745;
+    color: #28a745;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+.register-link a {
+    color: #8B0000;
+    text-decoration: none;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}

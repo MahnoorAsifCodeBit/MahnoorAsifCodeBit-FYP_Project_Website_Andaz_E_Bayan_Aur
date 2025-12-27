@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #790202;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: #2196F3;
+}
+
+a:hover {
+    color: #0b7dda;
+    text-decoration: underline;
+}
+
+.action-links a {
+    margin: 0 5px;
+}
+
+.action-links a:nth-child(2) {
+    color: #e67e22;
+}
+
+.action-links a:nth-child(3) {
+    color: #e74c3c;
+}
+
+
+       /* Navbar container setup */
+       .navbar {
+        background-color: #800000; /* Maroon background */
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space between logo and nav links */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Logo/Image styling inside navbar */
+    .nav-image {
+        margin-left: 10px;
+        max-height: 50px;
+    }
+
+    /* Nav links container */
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 40px; /* Space between links */
+    }
+
+    /* Individual nav link styling */
+    .navbar-nav .nav-link {
+        padding: 8px 10px;
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        color: white !important;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* Hover effects for nav links */
+    .navbar-nav .nav-link:hover, 
+    .navbar-nav .nav-link:focus {
+        text-shadow: 0 4px 8px white;
+        border-bottom: 2px solid white;
+    }
+
+    /* Dropdown menu items hover effect */
+    .navbar-nav .dropdown-item:hover {
+        background-color: #6c0000;
+        color: white;
+        padding-left: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Add margin below content so it's not hidden under fixed navbar */
+    body {
+        margin-top: 80px; /* adjust depending on navbar height */
+    }

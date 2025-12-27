@@ -1,0 +1,278 @@
+.container {
+    direction: rtl; /* Right-to-left alignment for all text inside container */
+    text-align: right; 
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 70px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    font-family: 'Gulzar', serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    border-bottom: 2px solid #f0c808;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p strong {
+    font-family: 'Gulzar', serif;
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.border.rounded.p-3 {
+    background: linear-gradient(135deg, #f9fafb, #f1f3f5);
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    text-align: right;
+}
+
+pre {
+    font-family: 'Gulzar', serif;
+    font-size: 1.4rem;
+    line-height: 2.2;
+    color: #212529;
+    background-color: transparent;
+    border: none;
+    direction: rtl;
+    text-align: right;
+}
+
+.btn.btn-secondary {
+    float: left; /* Keep button on the left side since RTL puts other elements to the right */
+    background-color: #4b0e19;
+    border-color: #4b0e19;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn.btn-secondary:hover {
+    background-color: rgb(193, 5, 5);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    pre {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+}
+
+
+/* Navbar background color and height adjustments */
+
+:root {
+  --maroon: #800000;
+  --maroon-dark: #6c0000;
+  --hover-light: #d7ccc8;
+}
+
+
+@media (max-width: 768px) {
+  .nav-home a {
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+  
+.navbar {
+  position: relative; /* Sticks to the top */
+  top: 0;
+  left: 0;
+  width: 99vw; /* Full width */
+  height: 70px;
+  z-index: 99999; /* Stays on top of other content */
+  background: #4b0e19; /* Semi-transparent maroon */
+  backdrop-filter: blur(10px); /* Glass effect */
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling: visible, well-sized */
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+
+/* Center all nav items (except user) */
+.navbar-nav {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Nav link styling */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on links */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link:focus {
+  color: #FFDAB9 !important;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid white;
+}
+
+/* Dropdown menu styling */
+.navbar-nav .dropdown-menu {
+  background-color: #4b0e19;
+  border: none;
+}
+
+/* Dropdown item styles */
+.navbar-nav .dropdown-item {
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown item hover effect */
+.navbar-nav .dropdown-item:hover {
+  background-color: #6c0000;
+  color: #FFDAB9;
+  padding-left: 25px;
+}
+
+/* User avatar image styling */
+.nav-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 8px;
+  border: 1px solid #4b0e19;
+}
+
+/* Keep avatar/user menu on right */
+.navbar-collapse {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Optional: white caret for dropdown */
+.navbar-light .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+
+/* Logout button */
+.logout-btn {
+  display: inline-block;
+  margin-top: 7px;
+  margin-right: 15px;
+  background: rgb(134, 114, 114);
+  color: #fff;
+  padding: 10px 26px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.logout-btn:hover {
+  background: #b30000;
+  transform: translateY(-5px);
+  padding: 20px 48px;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+/* Footer */
+.site-footer {
+  background: #4b0e19;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.footer-links a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Lang switcher */
+.goog-te-gadget img {
+  display: none; /* Hide Google branding image */
+}
+.goog-te-gadget-simple {
+  background-color: #4b0e19 !important;
+  border: none !important;
+  color: white !important;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.goog-te-gadget-simple:hover {
+  background-color: #4b0e19 !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
+  color: rgb(255, 255, 255) !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Footer */
+.site-footer {
+  background: #4b0e19;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.footer-links a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+

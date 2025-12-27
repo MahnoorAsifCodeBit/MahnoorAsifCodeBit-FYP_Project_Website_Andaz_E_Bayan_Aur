@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Test</title>
+
+    <!-- Include A-Frame library -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    
+    <!-- Include AR.js for augmented reality features -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <!-- A-Frame scene for AR -->
+    <a-scene embedded arjs debugUIEnabled="true">
+      <!-- Marker for AR.js to detect (Hiro marker) -->
+      <a-marker preset="hiro">
+        <!-- 3D object to display on the marker (a red box) -->
+        <a-entity geometry="primitive: box" material="color: red;"></a-entity>
+      </a-marker>
+
+      <!-- Camera to show AR view -->
+      <a-camera></a-camera>
+    </a-scene>
+  </body>
+</html>
