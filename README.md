@@ -72,14 +72,8 @@ The platform is based on a **Three-Tier Architecture**:
 
 ---
 
-# 🖋️ Andaz-e-Bayan Aur (اندازِ بیاں اور)
-
-Andaz-e-Bayan Aur is an innovative web platform designed to revive and modernize the experience of Urdu poetry and calligraphy for the digital age. By merging literary richness with cutting-edge technology, the platform offers a culturally rooted yet technologically forward journey.
-
----
-
 ### 🛠️ Installation & Setup
 
-### 1️⃣ Clone the Repository
+###  Clone the Repository
 ```bash
 git clone [https://github.com/MahnoorAsifCodeBit/MahnoorAsifCodeBit-FYP_Project_Website_Andaz_E_Bayan_Aur.git](https://github.com/MahnoorAsifCodeBit/MahnoorAsifCodeBit-FYP_Project_Website_Andaz_E_Bayan_Aur.git)
